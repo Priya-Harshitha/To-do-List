@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+  </head>
+  <body>
+    <header>
+      <h1>To-do-List</h1>
+    </header>
+
+    <main>
+        <input type="text" id="ip" placeholder="Enter Your Task here">
+        <button onclick="schedule()">Submit Your Task</button>
+      <h1 id="head1"></h1>
+      <h1 id="head2"></h1>
+      <h1 id="head3"></h1>
+      <h1 id="head4"></h1>
+      <h1 id="head5"></h1>
+      <h1 id="head6"></h1>
+    </main>
+    <script>
+        var i=0;
+        function schedule(){
+            if (i==0){
+        var heading=document.getElementById("head1");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            else if (i==1){
+        var heading=document.getElementById("head2");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            else if (i==2){
+        var heading=document.getElementById("head3");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            else if (i==3){
+        var heading=document.getElementById("head4");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            else if (i==4){
+        var heading=document.getElementById("head5");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            else if (i==5){
+        var heading=document.getElementById("head6");
+        heading.innerHTML=document.getElementById('ip').value;
+            }
+            i=i+1;
+        }
+    </script>
+  </body>
+</html>
